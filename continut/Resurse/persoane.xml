@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Maria</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Florilor</strada>
+            <numar>12</numar>
+            <localitate>Neamt</localitate>
+            <judet>Piatra Neamt</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    <persoana id="2">
+        <nume>John</nume>
+        <prenume>Ion</prenume>
+        <varsta>22</varsta>
+        <adresa>
+            <strada>Eternitatii</strada>
+            <numar>22</numar>
+            <localitate>Iasi</localitate>
+            <judet>iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    <persoana id="3">
+        <nume>Ionescu</nume>
+        <prenume>Lori</prenume>
+        <varsta>20</varsta>
+        <adresa>
+            <strada>Fericirii</strada>
+            <numar>21</numar>
+            <localitate>Suceava</localitate>
+            <judet>Suceava</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    <persoana id="4">
+        <nume>Moise</nume>
+        <prenume>Andrei</prenume>
+        <varsta>30</varsta>
+        <ocupatia>bucatar</ocupatia>
+        <adresa>
+            <strada>Mihai Eminescu</strada>
+            <numar>2</numar>
+            <localitate>Cluj</localitate>
+            <judet>Cluj</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    <persoana id="5">
+        <nume>Popescu</nume>
+        <prenume>Ana</prenume>
+        <varsta>50</varsta>
+        <ocupatia>inginer</ocupatia>
+        <adresa>
+            <strada>Henri Coanda</strada>
+            <numar>9</numar>
+            <localitate>Timisoara</localitate>
+            <judet>Timis</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+</persoane>

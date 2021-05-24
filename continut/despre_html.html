@@ -1,0 +1,96 @@
+
+		<header>
+			
+        </header>
+   
+		<div style="margin: 20px;">
+			<h1>Programare web</h1>
+			<h3>Limbajul HTML</h3>
+			<p>
+				<b>HTML(HyperText Markup Language)</b> este un <i><span class="text_2">limbaj de marcare</span></i> utilizat pentru crearea paginii web.
+			</p>
+			<p>
+				Un exemplu de cod html il gasiti in imaginea urmatoarea care se afla la adresa 
+				<a href="http://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png"> http://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png</a>.
+				<br />
+				Imaginea are atributul <span class="text_2">height</span> de valoarea 147.
+			</p>
+			<img src="http://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png" height="147">
+
+			<p><b>Tag-urile</b> html cele mai utilizate in realizarea tabelelor sunt: </p>
+			<table class="despre_html">
+				<tr class="tr_despre_html">
+					<td class="td_despre_html">table</td>
+					<td class="td_despre_html">defineste un tabel</td>
+				</tr>
+				<tr class="tr_despre_html">
+					<td class="td_despre_html">tr</td>
+					<td class="td_despre_html">un rand intr-un tabel</td>
+				</tr>
+				<tr class="tr_despre_html">
+					<td class="td_despre_html">td</td>
+					<td class="td_despre_html">o celula intr-un tabel</td>
+				</tr>
+			</table>
+			<p>
+				<b>Observatie: </b> Pentru a pune un contur unui tabel se poate(dar nu se recomanda) sa se puna abtributul <span class="text_2">border="1"</span>.
+			</p>
+			<p>
+				La validare va da eroarea: <i>The border attribute on the table element is obsolete.</i>
+			</p>
+
+			<br />
+			<h3> Cerinta 2</h3>
+			<p>Formularele se pot crea cu ajutorul tag-ului form care poate contine tag-urile: <span class="text_2">input, textarea, label, select, option, button.</span>
+			<br />
+			Pentru mai multe detalii consultati cursul sau tutorialul <a href="http://www.w3schools.com/html/html_forms.asp">HTML Forms and Inputs</a> de la adresa <a href="http://www.w3schools.com/html/html_forms.asp">http://www.w3schools.com/html/html_forms.asp</a> .
+			</p>
+			<p>Un exemplu de formular este urmatorul: </p>
+			<form>
+				<label>Nume: </label>
+				<input type="text" name="nume" value="nume">
+				<br />
+				<label>Prenume: </label>
+				<input type="text" name="prenume" value="prenume">
+				<br />
+				<label>Parola: </label>
+				<input type="password" name="parola" value="aaa">
+				<br />
+				<label>Culoarea preferata: </label>
+				<select id="culori">
+					<option value="rosu">rosu</option>
+					<option value="negru">negru</option>
+				</select>
+				<br />
+				<label>Descriere: </label>
+				<textarea>un text</textarea>
+				<br />
+				<input type="checkbox">
+				<label>Sunt de acord cu conditiile</label>
+				<br />
+				<button>Inregistreaza</button>
+
+			</form>
+
+			<br />
+			<h3> Cerinta 3</h3>
+			<p>
+				Pentru a crea liste se pot folosi tag-urile:
+			</p>
+			<ol type="i">
+				<li> ul - lista neordonata</li>
+				<li> ol - lista ordonata</li>
+				<li> li - item din lista</li>
+				<li> dl - lista cu descrieri</li>
+				<li> dt - termen dintr-o lista cu descrieri</li>
+				<li> dd - descrierea dintr-o lista cu descrieri</li>
+			</ol>
+
+			<p>
+				Pentru a insera un document HTML in altul se poate folosi tag-ul <span class="text_2">&ltiframe&gt</span>.
+				<br />
+				Astfel, exemplu de mai jos insereaz&#259 con&#355inutul de la adresa <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>.
+			</p>
+			<iframe src="https://html.spec.whatwg.org/multipage/" width="1000px">
+			</iframe>
+		</div>

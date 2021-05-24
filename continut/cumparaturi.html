@@ -1,0 +1,28 @@
+ 
+ <div id="format_titlu"> Cumparaturi </div>
+<br>
+<div class="cumparaturi_div">
+
+   <label>Selectati modalitatea de stocare(initial: localStorage): </label>
+   <select id="optiuneStocare" style="font-size:20px; color:red">
+      <option value="localStorage">localStorage</option>
+      <option value="indexedDB">indexedDB</option>
+   </select>
+   <button class="button_validare" onclick="alegeStocare()">Alege</button>
+
+
+   <br>
+   <br>
+   <br>
+	<label>Nume: </label>
+   <input type="text" name="nume_produs" id="nume_produs" value="">
+   <label>Cantitate: </label>
+   <input type="number" name="cantitate" id="cantitate" value="">
+   <br>
+   <button class="button_validare" onclick="adaugaProdus()">Adauga</button>
+   <button class="button_validare" onclick="afiseazaProdus()">Afiseaza produse</button>
+   <button class="button_validare" onclick="stergeProdus()">Sterge tot</button>
+
+   <div class="div_cumparaturi" id="produse" >
+   </div>
+</div>

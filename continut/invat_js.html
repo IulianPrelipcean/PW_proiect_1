@@ -1,0 +1,139 @@
+ 
+
+        <header>
+        </header>    
+        <aside class="meniu_legaturi">
+            <h1>Navigare</h1>
+            <ul class="sectiune_ul">
+                <li class="sectiune_li"><a href='#sectiunea1'>Informatii</a></li>
+                <li class="sectiune_li"><a href='#sectiunea2'>Loto</a></li>
+                <li class="sectiune_li"><a href='#sectiunea3'>Desen</a></li>
+                <li class="sectiune_li"><a href='#sectiunea4'>Tabel</a></li>
+            </ul>
+        </aside>
+        <div class="spatiere">
+        </div>
+        
+
+        <!-- sectiunea 1 -->
+        <div class = "sectiunea_1"  id="sectiunea1">
+            <h1>Informatii generale</h1>
+
+            <button onClick="afiseazaInformatii()" class="buton_afisare_informatii_s1">Afiseaza informatii</button>
+            <div class="informatii_sectiunea_1">
+                <p><u>Data curenta</u></p>
+                <div id="data_curenta">
+                </div>
+            </div>
+            <div class="informatii_sectiunea_1">
+                <p><u>Ora curenta</u></p>
+                <div id="ora_curenta">
+                </div>
+            </div>  
+            <div class="informatii_sectiunea_1">
+                <p><u>Adresa url</u></p>
+                <div id="adresa_url">
+                </div>
+            </div>
+            <div class="informatii_sectiunea_1">
+                <p><u>Versiune browser</u></p>
+                <div id="versiune_browser">
+                </div>
+            </div>
+            <div class="informatii_sectiunea_1">
+                <p><u>Nume browser</u></p>
+                <div id="nume_browser">
+                </div>
+            </div>
+            <div class="informatii_sectiunea_1">
+                <p><u>Sistem de operare</u></p>
+                <div id="sistem_operare">
+                </div>
+            </div>
+            <div class="informatii_sectiunea_1">
+                <p><u>Locatie</u></p>
+                <div id="locatie">
+                    locatie_lLOC
+                </div>
+            </div>
+        </div>
+
+
+        <!-- sectiunea 2 -->
+        <div class="sectiunea_2" id="sectiunea2">
+            <h1>Loto classic</h1>
+            <p class="text_s2"> Alege numerele castigatoare !</p>
+            <div>
+                <form>
+                    <input type="text" id="numar_1" pattern="[A-Z0-9]{2}" title="Alege formatul corect" class="input_numere" value="0">
+                    <input type="text" id="numar_2" pattern="[A-Z0-9]{2}" title="Alege formatul corect" class="input_numere" value="0">
+                    <input type="text" id="numar_3" pattern="[A-Z0-9]{2}" title="Alege formatul corect" class="input_numere" value="0">
+                    <input type="text" id="numar_4" pattern="[A-Z0-9]{2}" title="Alege formatul corect" class="input_numere" value="0">
+                    <input type="text" id="numar_5" pattern="[A-Z0-9]{2}" title="Alege formatul corect" class="input_numere" value="0">
+                    <input type="text" id="numar_6" pattern="[A-Z0-9]{2}" title="Alege formatul corect" class="input_numere" value="0">
+                    <input type="text" id="numar_7" pattern="[A-Z0-9]{2}" title="Alege formatul corect" class="input_numere" value="0">
+                    <input type="text" id="numar_8" pattern="[A-Z0-9]{2}" title="Alege formatul corect" class="input_numere" value="0">
+                    <!-- <input type="submit" onClick="genereazaNumere()"> -->
+                    <!-- <input type="submit" class="hide" id="inputButton" style="visibility:hidden;"> -->
+                </form>
+            </div>
+
+            <div>
+                <button class="buton_extragere_s2" onClick="genereazaNumere()">Extrage numere</button>
+                <p class="text_s2"> Numerele castigatoare sunt:</p>
+                <div >
+                    <ul class="lista_numere_generate_ul">
+                        <li class="lista_numere_generate_li" id="numarul1" pattern="[A-Z0-9]{2}"></li>
+                        <li class="lista_numere_generate_li" id="numarul2"></li>
+                        <li class="lista_numere_generate_li" id="numarul3"></li>
+                        <li class="lista_numere_generate_li" id="numarul4"></li>
+                        <li class="lista_numere_generate_li" id="numarul5"></li>
+                        <li class="lista_numere_generate_li" id="numarul6"></li>
+                        <li class="lista_numere_generate_li" id="numarul7"></li>
+                        <li class="lista_numere_generate_li" id="numarul8"></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div id="rezultat_extragere" class="format_rezultat_exatragere">
+            </div>
+        </div>
+
+        <!-- sectiunea 3 -->
+        <div class="sectiunea_3" id="sectiunea3">
+            <h1>Desene pentru copii</h1>
+            <p class="text_s2">Alege culorile pentru desen: </p>
+            <input type="color" value="#ff0000" id="culoare_margine">
+            <input type="color" value="#ff0000" id="culoare_umplere">
+            <button onClick="deseneazaFunction()" class="buton_sterge_s3" style="color:rgb(161, 37, 37);">Apasa pentru a desena</button> 
+            <button onClick="(new deseneazaFunction()).stergeDesenVar();" class="buton_sterge_s3">Sterge desen</button>
+            <br>
+
+            <canvas id="myCanvas" width="500" height="300" style="border:1px solid #d3d3d3;">
+            </canvas>
+        </div>
+
+        <!-- sectiunea 4 -->
+        <div class="sectiunea_4"  id="sectiunea4">
+            <h1>Tabel</h1>
+
+            <button onClick="createTable()" class="table_button_s4">Genereaza tabel</button>
+            <br>
+            <input type="color" id="culoare_element_rand">
+            <label>adauga rand dupa:</label>
+            <input type="text" id="numar_rand">
+            <button onClick="adaugaRand()" class="table_button_s4">Adauga rand</button>
+
+            <br>
+            <input type="color" id="culoare_element_coloana">
+            <label>adauga coloana dupa:</label>
+            <input type="text" id="numar_coloana">
+            <button onClick="adaugaColoana()" class="table_button_s4">Adauga coloana</button>            
+
+            <div id="continut_tabel" class="format_continut">
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+        <div onload="createTable()"></div>
+

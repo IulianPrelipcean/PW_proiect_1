@@ -1,0 +1,83 @@
+
+        <header>
+        </header>
+        <br />
+        <br />
+        <div class="formular_inregistrare">
+            <h2>Informatii generale</h2>
+            <form action='' method="POST" class="inregistrare"> 
+                <label>Nume utilizator: </label>
+                <input type="text" name="nume_utilizator" id="nume_utilizator" value="">
+
+                <br />
+                <label>Parola: </label>
+                <input type="password" name="parola" id="parola" value="">
+
+                <br />
+                <label>Nume: </label>
+                <input type="text" name="nume" value="">
+
+                <br />
+                <label>Prenume: </label>
+                <input type="text" name="prenume" value="">
+
+                <br />
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+
+                <br />
+                <label>Telefon: </label>
+                <input type="tel" name="telefon" value="">
+
+                <br />
+                <br />
+                <h2>Informatii personale:</h2>  
+                <br />
+                <br />
+
+                <label>Sex:</label>
+                <select id="sex">
+                    <option value="masculin">masculin</option>
+                    <option value="feminin">feminin</option>
+                </select>
+
+                <br />
+                <label for="mancare">Mancarea preferata: </label>
+                <input list="mancare" name="mancarea" id="mancarea">
+                <datalist id="mancare">
+                    <option value="pizza">
+                    <option value="paste">
+                </datalist>
+
+                <br />
+                <label>Culoarea preferata: </label>
+                <input type="color" name="color" value="">
+
+                <br />
+                <label>Data nasterii: </label>
+                <input type="date" name="data_nasterii" value="">
+
+                <br />
+                <label>Ora nasterii: </label>
+                <input type="time" name="ora_nasterii" value="">
+
+                <br />
+                <label>Varsta: </label>
+                <input type="range" name="varsta" value="" min="0" max="130">
+
+                <br />
+                <label>Adresa paginii personale: </label>
+                <input type="url" name="adresa_pagina" value="">
+
+                <br />
+                <label>Descriere: </label>
+                <input type="textarea" name="descriere" value="">
+
+                <br />
+                <br />
+                
+            </form>
+            <input type="submit"  onclick="cerereUtilizatori()" value="Inregistreaza">
+        </div>
+
+

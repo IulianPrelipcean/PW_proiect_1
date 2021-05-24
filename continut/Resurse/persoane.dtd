@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE persoane [
+<!ELEMENT persoane (nume, prenume, varsta)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+]>
+<persoane>
+<nume>Popescu</nume>
+<prenume>Ion</prenume>
+<varsta>23</varsta>
+</persoane>

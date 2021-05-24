@@ -1,0 +1,491 @@
+ 
+.menuBar {
+    overflow: hidden;
+    background-color: #333;
+    /* position: fixed;
+    width: 100%; */
+}
+
+.menuBar a {
+    float: left;
+    display: block;
+    color: #eee8e8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menuBar a:hover {
+    /* background-color: rgba(160, 125, 125, 0.2); */
+    background-color: rgba(192, 22, 235, 0.308);
+    color: rgb(0, 0, 0);
+}
+
+.menuBar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.menuBar .icon {
+    display: none;
+}
+
+/* cand pagina este mai mica de 1100 pixeli se aplica setarile urmatoare asupra barei de meniu */
+/* meniul este afisat pe verticala */
+@media screen and (max-width: 1100px) {
+    .menuBar a:not(:first-child) {display: none;}       /*  primul element din meniu este afisat */
+    .menuBar a.icon {
+        float: right;
+        display: block;
+    }
+    .menuBar.responsiveMenu {
+        position: relative;
+    }
+    .menuBar.responsiveMenu .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menuBar.responsiveMenu a {
+        float: none;
+        display: block;
+        text-align: left;   
+    }
+}
+/* 
+@media screen and (max-width: 1100px) {
+    
+} */
+
+
+
+
+/* -------------------------------  begin  ----------------------------- */
+
+
+ body{
+    margin: 0px;
+    /* margin-top: 650px; */
+    background-size: 100% 100%;
+    min-height: 1000px;
+    background-image: linear-gradient(to bottom right, rgb(247, 218, 218), rgb(156, 241, 241));
+}
+ 
+
+
+/* --------  Acasa -------- */
+aside.index {
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    float: left;
+    font-style: italic;
+    background-color: lightgray;
+  }
+
+.text_1{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+
+
+
+
+
+/* --------   inregistrare    -- ----- */
+
+/* input[type=text], input[type=password],  select { */
+input, select {
+    padding: 4px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    background-color: rgb(109, 104, 119);
+    font-size: 20px;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(65, 223, 65);
+    font-size: 20px;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.formular_inregistrare{
+    margin: 40px;
+    border-right: black solid 1px;
+    border-bottom: grey solid 1px;
+    width: 500px;
+}
+
+
+/* --------   Despre (_html)   -- ----- */
+.text_2{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+.despre_html {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+.tr_despre_html{
+    background-color: #bea4a4;
+}
+
+td{
+    border: 2px solid #535252;
+    text-align: left;
+    padding: 8px;
+}
+
+.td_despre_html{
+    padding: 10px;
+}
+
+
+/* --------   Video    -- ----- */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(80deg, rgb(147, 160, 160) 0%, rgb(164, 241, 216) 35%, rgb(183, 245, 193) 100%); 
+}
+  
+.video{
+    padding: 10px;
+    margin: 20px;
+}
+
+
+
+/* --------   Desen    -- ----- */
+.desen{
+    background: linear-gradient(180deg, rgb(53, 236, 236) 0%, rgb(248, 220, 129) 35%, rgb(83, 240, 109) 100%); 
+    
+}
+
+
+/* --------   InvatJS    -- ----- */
+
+
+
+aside.meniu_legaturi {
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: rgba(9, 21, 85, 0.2);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    position: static;
+    border-radius: 10px 70px 2px 70px;
+  }
+
+.sectiune_ul{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;     
+    overflow: hidden;
+    top: 0;
+}
+
+.sectiune_li a{
+    float: left;
+    /* display: */
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-decoration-line: none;
+    padding: 14px 16px;
+    font-family:'Times New Roman';
+    font-style: italic;
+}
+  /* //.text_1{ */
+
+.spatiere{
+    height:90px;
+}
+
+
+/* --------------   sectiunea 1 ------------------ */
+
+
+.sectiunea_1{
+    margin: 30px;
+    margin-top:80px;
+    background-color:rgba(20, 241, 20, 0.3);
+    padding:20px;
+    border-radius: 10px 70px 2px 70px;
+
+    /* position: static; */
+}
+
+.informatii_sectiunea_1{
+    padding:10px;
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border-radius:20px;
+    border-bottom: black solid 2px;
+    border-right: black solid 1px;
+}
+
+.buton_afisare_informatii_s1{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+}
+
+
+/* --------------   sectiunea 2 ------------------ */
+
+.sectiunea_2{
+    margin: 30px;
+    margin-top:90px;
+    height: auto;
+    background-color:rgba(20, 230, 212, 0.4);
+    padding: 20px;
+    border-radius: 10px 70px 2px 70px;
+}
+
+
+.lista_numere_generate_ul{
+    list-style-type: none;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;     
+    overflow: hidden;
+    top: 0;
+}
+
+.lista_numere_generate_li{
+    display: block;
+    float: left;
+    color: rgb(7, 8, 7);
+    text-align: center;
+    text-decoration-line: none;
+    padding: 14px 16px;
+    font-family:'Times New Roman';
+    font-style: italic;  
+    font-size:25px;
+    border: solid 1px;
+    border-radius: 30px;
+    margin:10px;
+
+}
+
+.input_numere{
+    width:100px;
+}
+
+.format_rezultat_exatragere{
+    margin-left:200px;
+    width: 500px;
+    height: 40px;
+    font-size:25px;
+    font-style: italic;
+    padding: 30px;
+    border: solid 1px;
+    border-radius: 30px;
+    margin:10px;
+}
+
+.text_s2{
+    font-size:20px;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    padding-bottom:0px;
+}
+
+.buton_extragere_s2{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+/* --------------   sectiunea 3 ------------------ */
+
+.sectiunea_3{
+    margin: 30px;
+    margin-top:90px;
+    height: auto;
+    background-color:rgba(26, 13, 202, 0.434);
+    padding: 20px;
+    border-radius: 10px 70px 2px 70px;
+}
+
+.buton_sterge_s3{
+    background-color: #4caf9e; /* Green */
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+
+/* --------------   sectiunea 4 ------------------ */
+
+.sectiunea_4{
+    margin: 30px;
+    margin-top:90px;
+    min-height: 300px;
+    height: auto;
+    background-color:rgba(118, 7, 223, 0.534);
+    padding: 20px;
+    border-radius: 10px 70px 2px 70px;
+}
+
+.table_button_s4{
+    background-color: #4caf9e; /* Green */
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+
+
+/* ---------------------   Persoane   ---------------------- */
+
+
+.persoane{
+    border: 2px, solid, rgba(9, 21, 85, 0.2);
+}
+
+th{
+    border: 2px solid #3d3838;
+    background-color: #746969;
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+
+
+
+/* ---------------------   Verifica   ---------------------- */
+
+.validare_div{
+    margin-top: 0px;
+    margin-left: 100px;
+    width: 20%;
+    border-radius:20px;
+    border-bottom: black solid 2px;
+    border-right: black solid 1px;
+    padding: 20px;
+}
+
+.button_validare{
+    background-color: #4caf9e; /* Green */
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.format_mesaj_validare{
+    border-radius:30%;
+    margin-top:10px;
+    background-color:rgba(147, 160, 160, 0.2);
+    padding: 20px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(43, 49, 49);
+}
+
+
+
+
+/* ---------------------   Cumparaturi   ---------------------- */
+
+
+#format_titlu{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    margin:auto;
+    margin-top: 30px;
+    width: 50%;
+    padding: 20px;
+}
+
+.cumparaturi_div{
+    margin: auto;
+    width: 50%;
+    border-radius:20px;
+    border-bottom: black solid 2px;
+    border-right: black solid 1px;
+    padding: 20px;
+}
+
+
+.div_cumparaturi{
+    border-radius:20%;
+    margin-top:10px;
+    margin: auto;
+    margin-top:10px;
+    /* width: 80%; */
+    background-color:rgba(147, 160, 160, 0.2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(43, 49, 49);
+    /* align-content: center; */
+}
+
+.format_tabel{
+    border-radius: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    width: 60%;
+}
+
